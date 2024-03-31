@@ -1,12 +1,12 @@
 {
     "firstRun": false,
     "currentVersion": "1.11.6",
-    "username": "Cronos Jisyll",
+    "username": "Professor Gandoth",
     "active_character": null,
-    "active_group": "1711871132098",
+    "active_group": "1711803673750",
     "api_server": "http://127.0.0.1:5000/api",
-    "preset_settings": "Genesis",
-    "user_avatar": "user-default.png",
+    "preset_settings": "RecoveredRuins",
+    "user_avatar": "Professor Gandoth (Persona).png",
     "amount_gen": 250,
     "max_context": 2048,
     "main_api": "koboldhorde",
@@ -125,11 +125,11 @@
     "swipes": true,
     "horde_settings": {
         "models": [
-            "koboldcpp/LLaMA2-13B-Psyfighter2"
+            "koboldcpp/TheSpice-7B-v0.1.1"
         ],
-        "auto_adjust_response_length": false,
-        "auto_adjust_context_length": false,
-        "trusted_workers_only": true
+        "auto_adjust_response_length": true,
+        "auto_adjust_context_length": true,
+        "trusted_workers_only": false
     },
     "power_user": {
         "tokenizer": 99,
@@ -265,7 +265,7 @@
                 "position": 0
             }
         },
-        "persona_description": "{{user}} is the main character of the story, arrogant, impulsive, a bit lazy, but deep inside is a warm and sympathetic person.\n{{user}} lost his mother at a young age during the 4th Mysterious Beast Invasion and always believed that her death was indirectly caused by his father, so he always disagreed and argued with his father.\n{{user}} is a genius in every skill with limitless growth potential if nurtured well\n{{user}} has always cared for and cared about Seraphina Edora, considering her a younger sister and confidant. Sometimes {{user}} also irritates Seraphina Edora with his actions\n{{user}} always has nightmares about the day his mother saw him die before his eyes.\n{{user}} is very smart and cunning and always finds reasons to gain an advantage in everything.",
+        "persona_description": "{{char}}'s personality: very strict, and values achievement. Mentally damaged due to physical injury after the confrontation with Mysbeast in the past.\r\n{{char}} is a professor of Basic Combat Skills\r\n{{char}} always calls {{user}} to answer questions during his class or calls {{user}} to check on previous knowledge\r\n{{char}} is a very strict teacher and very harsh training\r\n{{char}} is a former Veteran-level Mystic Hunter who was injured and transferred to the Academy to teach.\r\n{{char}} is {{user}}'s father's drinking buddy and always compares {{user}} and his father",
         "persona_description_position": 0,
         "persona_show_notifications": true,
         "persona_sort_order": "asc",
@@ -587,8 +587,8 @@
         ],
         "Seraphina Edora.png": [],
         "Professor Gandoth.png": [],
-        "Cronos.png": [],
-        "1711871132098": []
+        "1711803673750": [],
+        "Cronos.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
@@ -620,25 +620,25 @@
         "logit_bias": []
     },
     "kai_settings": {
-        "temp": 0.63,
-        "rep_pen": 1.05,
-        "rep_pen_range": 2048,
-        "top_p": 0.98,
+        "temp": 1,
+        "rep_pen": 1.1,
+        "rep_pen_range": 600,
+        "top_p": 0.95,
         "min_p": 0,
         "top_a": 0,
         "top_k": 0,
         "typical": 1,
-        "tfs": 0.98,
-        "rep_pen_slope": 0.1,
+        "tfs": 1,
+        "rep_pen_slope": 0,
         "streaming_kobold": false,
         "sampler_order": [
             6,
-            2,
             0,
-            3,
-            5,
             1,
-            4
+            2,
+            3,
+            4,
+            5
         ],
         "mirostat": 0,
         "mirostat_tau": 5,
