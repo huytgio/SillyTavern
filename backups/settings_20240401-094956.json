@@ -2,8 +2,8 @@
     "firstRun": false,
     "currentVersion": "1.11.6",
     "username": "Cronos Jisyll",
-    "active_character": "Seraphina Edora.png",
-    "active_group": null,
+    "active_character": null,
+    "active_group": "1711871132098",
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "Genesis",
     "user_avatar": "user-default.png",
@@ -125,7 +125,7 @@
     "swipes": true,
     "horde_settings": {
         "models": [
-            "koboldcpp/Fimbulvetr-11B-v2"
+            "koboldcpp/LLaMA2-13B-Psyfighter2"
         ],
         "auto_adjust_response_length": false,
         "auto_adjust_context_length": false,
@@ -587,7 +587,8 @@
         ],
         "Seraphina Edora.png": [],
         "Professor Gandoth.png": [],
-        "Cronos.png": []
+        "Cronos.png": [],
+        "1711871132098": []
     },
     "nai_settings": {
         "temperature": 1.5,
