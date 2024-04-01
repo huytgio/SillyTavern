@@ -2,8 +2,8 @@
     "firstRun": false,
     "currentVersion": "1.11.6",
     "username": "Cronos Jisyll",
-    "active_character": "Seraphina Edora.png",
-    "active_group": null,
+    "active_character": null,
+    "active_group": "1711956924417",
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "Genesis",
     "user_avatar": "user-default.png",
@@ -129,7 +129,7 @@
         ],
         "auto_adjust_response_length": false,
         "auto_adjust_context_length": false,
-        "trusted_workers_only": true
+        "trusted_workers_only": false
     },
     "power_user": {
         "tokenizer": 99,
@@ -366,8 +366,18 @@
             "currentProvider": "System",
             "auto_generation": true,
             "ElevenLabs": {},
-            "System": {},
-            "narrate_user": false
+            "System": {
+                "voiceMap": {
+                    "[Default Voice]": "disabled",
+                    "Cronos Jisyll": "[Default Voice]",
+                    "Seraphina Edora": "[Default Voice]",
+                    "Professor Gandoth": "[Default Voice]",
+                    "Cronos": "[Default Voice]",
+                    "Cronos Jisyl": "[Default Voice]"
+                }
+            },
+            "narrate_user": false,
+            "enabled": true
         },
         "sd": {
             "scale_min": 1,
@@ -520,7 +530,8 @@
             "rmsMixRate": 1,
             "protect": 0.33,
             "voicMapText": "",
-            "voiceMap": {}
+            "voiceMap": {},
+            "voiceMapText": "Cronos Jisyll: (10,0.5,1.5,250,500,100,80,generated,300,300),\ndefault: (10,0.5,1.5,250,500,100,80,generated,300,300),\nSeraphina: (10,0.5,1.5,250,500,100,80,generated,300,300),\n"
         },
         "hypebot": {
             "enabled": false,
@@ -566,6 +577,72 @@
             "captionPrompt": "This is a screenshot of \"{{game}}\" game played on {{core}}. Provide a detailed description of what is happening in the game.",
             "commentPrompt": "{{user}} is playing \"{{game}}\" on {{core}}. Write a {{random:cheeky, snarky, funny, clever, witty, teasing, quirky, sly, saucy}} comment from {{char}}'s perspective based on the following:\n\n{{caption}}",
             "forceCaptions": false
+        },
+        "blip": {
+            "enabled": true,
+            "enableUser": true,
+            "onlyQuote": false,
+            "ignoreAsterisk": false,
+            "autoScrollChatToAnimation": false,
+            "showAllCharacters": true,
+            "audioMuted": false,
+            "audioVolume": 21,
+            "minSpeedMultiplier": 1,
+            "maxSpeedMultiplier": 1,
+            "commaDelay": 0,
+            "phraseDelay": 0,
+            "textSpeed": 10,
+            "audioVolumeMultiplier": 100,
+            "audioSpeed": 80,
+            "audioMinPitch": 1,
+            "audioMaxPitch": 1,
+            "audioPlayFull": false,
+            "generatedMinFrequency": 440,
+            "generatedMaxFrequency": 440,
+            "voiceMap": {
+                "Cronos Jisyll": {
+                    "minSpeedMultiplier": 0.5,
+                    "maxSpeedMultiplier": 1.5,
+                    "commaDelay": 250,
+                    "phraseDelay": 500,
+                    "textSpeed": 10,
+                    "audioVolume": 100,
+                    "audioSpeed": 80,
+                    "audioOrigin": "generated",
+                    "audioSettings": {
+                        "minFrequency": 300,
+                        "maxFrequency": 300
+                    }
+                },
+                "default": {
+                    "minSpeedMultiplier": 0.5,
+                    "maxSpeedMultiplier": 1.5,
+                    "commaDelay": 250,
+                    "phraseDelay": 500,
+                    "textSpeed": 10,
+                    "audioVolume": 100,
+                    "audioSpeed": 80,
+                    "audioOrigin": "generated",
+                    "audioSettings": {
+                        "minFrequency": 300,
+                        "maxFrequency": 300
+                    }
+                },
+                "Seraphina": {
+                    "minSpeedMultiplier": 0.5,
+                    "maxSpeedMultiplier": 1.5,
+                    "commaDelay": 250,
+                    "phraseDelay": 500,
+                    "textSpeed": 10,
+                    "audioVolume": 100,
+                    "audioSpeed": 80,
+                    "audioOrigin": "generated",
+                    "audioSettings": {
+                        "minFrequency": 300,
+                        "maxFrequency": 300
+                    }
+                }
+            }
         }
     },
     "tags": [
@@ -587,7 +664,8 @@
         ],
         "Seraphina Edora.png": [],
         "Professor Gandoth.png": [],
-        "Cronos.png": []
+        "1711956924417": [],
+        "Cronos Jisyl.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
@@ -914,8 +992,8 @@
         "n": 1
     },
     "background": {
-        "name": "__transparent.png",
-        "url": "url(\"backgrounds/__transparent.png\")"
+        "name": "9ef861757062455285fae34047fb2db0.png~tplv-0es2k971ck-image.png",
+        "url": "url(\"backgrounds/9ef861757062455285fae34047fb2db0.png~tplv-0es2k971ck-image.png\")"
     },
     "proxies": [
         {
