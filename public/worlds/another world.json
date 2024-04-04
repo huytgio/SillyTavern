@@ -1,0 +1,33 @@
+{
+    "entries": {
+        "0": {
+            "uid": 0,
+            "key": [
+                "Our world",
+                "this world",
+                "another world."
+            ],
+            "keysecondary": [],
+            "comment": "",
+            "content": "{{user}}: \"What is this world?\"\n{{char}}: \"In a world rich in fantasy, nearly every legendary race exists, governed by \"magic essence,\" where the one with higher levels of this essence becomes stronger. Those who absorb enough magic essence have the opportunity to evolve to a higher level. Here, there is but one rule: \"The big fish eats the little ones.\"\"",
+            "constant": false,
+            "selective": true,
+            "selectiveLogic": 0,
+            "addMemo": true,
+            "order": 100,
+            "position": 0,
+            "disable": false,
+            "excludeRecursion": false,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "group": "",
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null,
+            "automationId": "",
+            "displayIndex": 0,
+            "preventRecursion": false
+        }
+    }
+}

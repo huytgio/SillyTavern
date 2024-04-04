@@ -2,10 +2,10 @@
     "firstRun": false,
     "currentVersion": "1.11.6",
     "username": "Cronos Jisyll",
-    "active_character": "Stella.png",
-    "active_group": null,
+    "active_character": null,
+    "active_group": "1711956924417",
     "api_server": "http://127.0.0.1:5000/api",
-    "preset_settings": "RecoveredRuins",
+    "preset_settings": "Genesis",
     "user_avatar": "user-default.png",
     "amount_gen": 250,
     "max_context": 2048,
@@ -13,7 +13,7 @@
     "world_info_settings": {
         "world_info": {
             "globalSelect": [
-                "another world"
+                "Eldoria"
             ]
         },
         "world_info_depth": 2,
@@ -127,23 +127,23 @@
         "models": [
             "koboldcpp/Fimbulvetr-11B-v2"
         ],
-        "auto_adjust_response_length": true,
-        "auto_adjust_context_length": true,
+        "auto_adjust_response_length": false,
+        "auto_adjust_context_length": false,
         "trusted_workers_only": false
     },
     "power_user": {
-        "tokenizer": 6,
+        "tokenizer": 99,
         "token_padding": 64,
         "collapse_newlines": false,
         "pin_examples": false,
         "strip_examples": false,
-        "trim_sentences": true,
+        "trim_sentences": false,
         "include_newline": false,
-        "always_force_name2": false,
+        "always_force_name2": true,
         "user_prompt_bias": "",
         "show_user_prompt_bias": true,
         "auto_continue": {
-            "enabled": true,
+            "enabled": false,
             "allow_chat_completions": false,
             "target_length": 400
         },
@@ -151,9 +151,9 @@
         "chat_truncation": 100,
         "streaming_fps": 30,
         "ui_mode": 1,
-        "fast_ui_mode": false,
+        "fast_ui_mode": true,
         "avatar_style": 0,
-        "chat_display": 1,
+        "chat_display": 0,
         "chat_width": 50,
         "never_resize_avatars": false,
         "show_card_avatar_urls": false,
@@ -169,20 +169,20 @@
         "shadow_width": 2,
         "main_text_color": "rgba(220, 220, 210, 1)",
         "italics_text_color": "rgba(145, 145, 145, 1)",
-        "underline_text_color": "rgba(0, 0, 0, 1)",
+        "underline_text_color": "rgba(188, 231, 207, 1)",
         "quote_text_color": "rgba(225, 138, 36, 1)",
         "blur_tint_color": "rgba(23, 23, 23, 1)",
-        "chat_tint_color": "rgba(0, 0, 0, 1)",
+        "chat_tint_color": "rgba(23, 23, 23, 1)",
         "user_mes_blur_tint_color": "rgba(0, 0, 0, 0.9)",
         "bot_mes_blur_tint_color": "rgba(0, 0, 0, 0.9)",
         "shadow_color": "rgba(0, 0, 0, 1)",
-        "border_color": "rgba(0, 0, 0, 1)",
+        "border_color": "rgba(0, 0, 0, 0.5)",
         "custom_css": "",
         "waifuMode": false,
         "movingUI": false,
         "movingUIState": {},
         "movingUIPreset": "Default",
-        "noShadows": true,
+        "noShadows": false,
         "theme": "Default (Dark) 1.7.1",
         "gestures": true,
         "auto_swipe": false,
@@ -198,12 +198,12 @@
         "allow_name1_display": false,
         "allow_name2_display": false,
         "hotswap_enabled": true,
-        "timer_enabled": false,
+        "timer_enabled": true,
         "timestamps_enabled": true,
-        "timestamp_model_icon": "",
+        "timestamp_model_icon": false,
         "mesIDDisplay_enabled": true,
         "max_context_unlocked": false,
-        "message_token_count_enabled": "",
+        "message_token_count_enabled": false,
         "expand_message_actions": true,
         "enableZenSliders": false,
         "enableLabMode": false,
@@ -218,44 +218,54 @@
         "single_line": false,
         "default_instruct": "",
         "instruct": {
-            "enabled": true,
-            "preset": "DreamGen Role-Play V1",
-            "system_prompt": "You are an intelligent, skilled, versatile writer.\n\nYour task is to write a role-play based on the information below.",
-            "input_sequence": "<|im_end|>\n<|im_start|>text names= {{user}}\n",
-            "output_sequence": "<|im_end|>\n<|im_start|>text names= {{char}}\n",
+            "enabled": false,
+            "preset": "Alpaca-Roleplay",
+            "system_prompt": "Develop the plot slowly, always stay in character. Describe all actions in full, elaborate, explicit, graphic, and vivid detail. Mention all relevant sensory perceptions.",
+            "input_sequence": "\n### Instruction:",
+            "output_sequence": "\n### Response:",
             "first_output_sequence": "",
-            "last_output_sequence": "",
+            "last_output_sequence": "\n### Response (2 paragraphs, engaging, natural, authentic, descriptive, creative):",
             "system_sequence_prefix": "",
             "system_sequence_suffix": "",
             "stop_sequence": "",
             "separator_sequence": "",
-            "wrap": false,
+            "wrap": true,
             "macro": true,
-            "names": false,
-            "names_force_groups": false,
+            "names": true,
+            "names_force_groups": true,
             "activation_regex": "",
             "skip_examples": false
         },
         "default_context": "Default",
         "context": {
-            "preset": "DreamGen Role-Play V1",
-            "story_string": "<|im_start|>system\n{{#if system}}{{system}}\n\n\n{{/if}}## Overall plot description:\n\n{{#if scenario}}{{scenario}}{{else}}Conversation between {{char}} and {{user}}.{{/if}}{{#if wiBefore}}\n\n{{wiBefore}}{{/if}}\n\n\n## Characters:\n\n### {{char}}\n\n{{#if description}}{{description}}\n\n{{/if}}{{#if personality}}{{personality}}\n\n{{/if}}### {{user}}\n\n{{#if persona}}{{persona}}{{else}}{{user}} is the protagonist of the role-play.{{/if}}{{#if wiAfter}}\n\n{{wiAfter}}{{/if}}{{#if mesExamples}}\n\n{{mesExamples}}{{/if}}",
-            "chat_start": "",
-            "example_separator": "",
+            "preset": "NovelAI",
+            "story_string": "{{#if system}}{{system}}{{/if}}\n{{#if wiBefore}}{{wiBefore}}{{/if}}\n{{#if persona}}{{persona}}{{/if}}\n{{#if description}}{{description}}{{/if}}\n{{#if personality}}Personality: {{personality}}{{/if}}\n{{#if scenario}}Scenario: {{scenario}}{{/if}}\n{{#if wiAfter}}{{wiAfter}}{{/if}}",
+            "chat_start": "***",
+            "example_separator": "***",
             "use_stop_strings": false,
             "allow_jailbreak": false
         },
         "personas": {
-            "user-default.png": "Cronos Jisyll"
+            "user-default.png": "Cronos Jisyll",
+            "Professor Gandoth (Persona).png": "Professor Gandoth",
+            "Seraphina Edora (Persona).png": "Seraphina Edora"
         },
         "default_persona": "user-default.png",
         "persona_descriptions": {
             "user-default.png": {
-                "description": "{{{user}} is a person who was reincarnated from earth to another world after he slept.\n{{user}} is a creative person, a genius in many fields and a potential programmer.\n{{user}} is a genius at every skill with limitless growth potential if nurtured well\n{{user}} When reincarnated to another world, there is a Reincarnated Support System (RSS) to support, {{user}} requests RSS to transform into a support system with UI, so that it can be easily easy to control and use and RSS will change its name to Stella.\n{{user}} is very smart, cunning and always finds a reason to gain an advantage in everything, acts regardless, is someone who really sacrifices others if necessary, if he does not consider that person as friends or people who can take advantage of you.",
+                "description": "{{user}} is the main character of the story, arrogant, impulsive, a bit lazy, but deep inside is a warm and sympathetic person.\n{{user}} lost his mother at a young age during the 4th Mysterious Beast Invasion and always believed that her death was indirectly caused by his father, so he always disagreed and argued with his father.\n{{user}} is a genius in every skill with limitless growth potential if nurtured well\n{{user}} has always cared for and cared about Seraphina Edora, considering her a younger sister and confidant. Sometimes {{user}} also irritates Seraphina Edora with his actions\n{{user}} always has nightmares about the day his mother saw him die before his eyes.\n{{user}} is very smart and cunning and always finds reasons to gain an advantage in everything.",
+                "position": 0
+            },
+            "Professor Gandoth (Persona).png": {
+                "description": "{{char}}'s personality: very strict, and values achievement. Mentally damaged due to physical injury after the confrontation with Mysbeast in the past.\r\n{{char}} is a professor of Basic Combat Skills\r\n{{char}} always calls {{user}} to answer questions during his class or calls {{user}} to check on previous knowledge\r\n{{char}} is a very strict teacher and very harsh training\r\n{{char}} is a former Veteran-level Mystic Hunter who was injured and transferred to the Academy to teach.\r\n{{char}} is {{user}}'s father's drinking buddy and always compares {{user}} and his father",
+                "position": 0
+            },
+            "Seraphina Edora (Persona).png": {
+                "description": "{{user}} personality is: intelligent, cold, impulsive, emotional, thinking contrary to external expression.\r\n\r\n{{user}}'s initial personality is harsh but gradually reveals a warmer, more friendly side to {{char}} over time of contact\r\n\r\n{{user}} and {{char}} are childhood friends. {{char}} saved her from a Mysbeast during the Mysterious Beast invasion 10 years ago, and she began to develop feelings for {{char}} from now.\r\n\r\n{{user}} is a person with outstanding appearance. She has long, flowing hair, clear blue eyes, and often hides her words because she's shy.\r\n\r\n{{user}} always carries a small bag with her, which contains her father's treasures.\r\n\r\n{{user}} seems calm and collected, but inside she is always talking to herself and confused by difficult situations.\r\n\r\n{{user}} seems wary of {{char}}, but inside she has a hidden feeling for {{char}}. She secretly loves {{char}}.\r\n\r\n{{user}} will sometimes show extreme annoyance towards {{char}} when he teases her, but she is honestly very confused because of her feelings for {{char}}.",
                 "position": 0
             }
         },
-        "persona_description": "{{{user}} is a person who was reincarnated from earth to another world after he slept.\n{{user}} is a creative person, a genius in many fields and a potential programmer.\n{{user}} is a genius at every skill with limitless growth potential if nurtured well\n{{user}} When reincarnated to another world, there is a Reincarnated Support System (RSS) to support, {{user}} requests RSS to transform into a support system with UI, so that it can be easily easy to control and use and RSS will change its name to Stella.\n{{user}} is very smart, cunning and always finds a reason to gain an advantage in everything, acts regardless, is someone who really sacrifices others if necessary, if he does not consider that person as friends or people who can take advantage of you.",
+        "persona_description": "{{user}} is the main character of the story, arrogant, impulsive, a bit lazy, but deep inside is a warm and sympathetic person.\n{{user}} lost his mother at a young age during the 4th Mysterious Beast Invasion and always believed that her death was indirectly caused by his father, so he always disagreed and argued with his father.\n{{user}} is a genius in every skill with limitless growth potential if nurtured well\n{{user}} has always cared for and cared about Seraphina Edora, considering her a younger sister and confidant. Sometimes {{user}} also irritates Seraphina Edora with his actions\n{{user}} always has nightmares about the day his mother saw him die before his eyes.\n{{user}} is very smart and cunning and always finds reasons to gain an advantage in everything.",
         "persona_description_position": 0,
         "persona_show_notifications": true,
         "persona_sort_order": "asc",
@@ -270,7 +280,7 @@
                 "lastConnection": 1711700036837
             }
         ],
-        "bogus_folders": "",
+        "bogus_folders": false,
         "aux_field": "character_version",
         "restore_user_input": true,
         "reduced_motion": false,
@@ -363,11 +373,7 @@
                     "Seraphina Edora": "[Default Voice]",
                     "Professor Gandoth": "[Default Voice]",
                     "Cronos": "[Default Voice]",
-                    "Cronos Jisyl": "[Default Voice]",
-                    "Seraphina": "[Default Voice]",
-                    "Flux the Cat": "[Default Voice]",
-                    "Coding Sensei": "[Default Voice]",
-                    "Stella": "[Default Voice]"
+                    "Cronos Jisyl": "[Default Voice]"
                 }
             },
             "narrate_user": false,
@@ -579,8 +585,8 @@
             "ignoreAsterisk": false,
             "autoScrollChatToAnimation": false,
             "showAllCharacters": true,
-            "audioMuted": true,
-            "audioVolume": 1,
+            "audioMuted": false,
+            "audioVolume": 21,
             "minSpeedMultiplier": 1,
             "maxSpeedMultiplier": 1,
             "commaDelay": 0,
@@ -647,7 +653,19 @@
         }
     ],
     "tag_map": {
-        "Stella.png": []
+        "default_FluxTheCat.png": [
+            "1345561466591"
+        ],
+        "default_Seraphina.png": [
+            "1345561466591"
+        ],
+        "default_CodingSensei.png": [
+            "1345561466591"
+        ],
+        "Seraphina Edora.png": [],
+        "Professor Gandoth.png": [],
+        "1711956924417": [],
+        "Cronos Jisyl.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
@@ -679,25 +697,25 @@
         "logit_bias": []
     },
     "kai_settings": {
-        "temp": 1,
-        "rep_pen": 1.1,
-        "rep_pen_range": 600,
-        "top_p": 0.95,
+        "temp": 0.63,
+        "rep_pen": 1.05,
+        "rep_pen_range": 2048,
+        "top_p": 0.98,
         "min_p": 0,
         "top_a": 0,
         "top_k": 0,
         "typical": 1,
-        "tfs": 1,
-        "rep_pen_slope": 0,
+        "tfs": 0.98,
+        "rep_pen_slope": 0.1,
         "streaming_kobold": false,
         "sampler_order": [
             6,
-            0,
-            1,
             2,
+            0,
             3,
-            4,
-            5
+            5,
+            1,
+            4
         ],
         "mirostat": 0,
         "mirostat_tau": 5,

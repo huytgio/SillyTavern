@@ -25,7 +25,9 @@
             "scanDepth": null,
             "caseSensitive": null,
             "matchWholeWords": null,
-            "automationId": ""
+            "automationId": "",
+            "excludeRecursion": false,
+            "preventRecursion": false
         },
         "1": {
             "uid": 1,
@@ -53,7 +55,9 @@
             "scanDepth": null,
             "caseSensitive": null,
             "matchWholeWords": null,
-            "automationId": ""
+            "automationId": "",
+            "excludeRecursion": false,
+            "preventRecursion": false
         },
         "2": {
             "uid": 2,
@@ -79,7 +83,9 @@
             "scanDepth": null,
             "caseSensitive": null,
             "matchWholeWords": null,
-            "automationId": ""
+            "automationId": "",
+            "excludeRecursion": false,
+            "preventRecursion": false
         },
         "3": {
             "uid": 3,
@@ -105,7 +111,9 @@
             "scanDepth": null,
             "caseSensitive": null,
             "matchWholeWords": null,
-            "automationId": ""
+            "automationId": "",
+            "excludeRecursion": false,
+            "preventRecursion": false
         }
     }
 }

@@ -1,8 +1,8 @@
 {
     "firstRun": false,
     "currentVersion": "1.11.6",
-    "username": "Cronos Jisyll",
-    "active_character": "Stella.png",
+    "username": "Cronos",
+    "active_character": "Seraphina Edora.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "RecoveredRuins",
@@ -13,7 +13,7 @@
     "world_info_settings": {
         "world_info": {
             "globalSelect": [
-                "another world"
+                "Eldoria"
             ]
         },
         "world_info_depth": 2,
@@ -125,25 +125,25 @@
     "swipes": true,
     "horde_settings": {
         "models": [
-            "koboldcpp/Fimbulvetr-11B-v2"
+            "koboldcpp/TheSpice-7B-v0.1.1"
         ],
         "auto_adjust_response_length": true,
         "auto_adjust_context_length": true,
         "trusted_workers_only": false
     },
     "power_user": {
-        "tokenizer": 6,
+        "tokenizer": 99,
         "token_padding": 64,
         "collapse_newlines": false,
         "pin_examples": false,
         "strip_examples": false,
-        "trim_sentences": true,
+        "trim_sentences": false,
         "include_newline": false,
-        "always_force_name2": false,
+        "always_force_name2": true,
         "user_prompt_bias": "",
         "show_user_prompt_bias": true,
         "auto_continue": {
-            "enabled": true,
+            "enabled": false,
             "allow_chat_completions": false,
             "target_length": 400
         },
@@ -151,9 +151,9 @@
         "chat_truncation": 100,
         "streaming_fps": 30,
         "ui_mode": 1,
-        "fast_ui_mode": false,
+        "fast_ui_mode": true,
         "avatar_style": 0,
-        "chat_display": 1,
+        "chat_display": 0,
         "chat_width": 50,
         "never_resize_avatars": false,
         "show_card_avatar_urls": false,
@@ -169,20 +169,20 @@
         "shadow_width": 2,
         "main_text_color": "rgba(220, 220, 210, 1)",
         "italics_text_color": "rgba(145, 145, 145, 1)",
-        "underline_text_color": "rgba(0, 0, 0, 1)",
+        "underline_text_color": "rgba(188, 231, 207, 1)",
         "quote_text_color": "rgba(225, 138, 36, 1)",
         "blur_tint_color": "rgba(23, 23, 23, 1)",
-        "chat_tint_color": "rgba(0, 0, 0, 1)",
+        "chat_tint_color": "rgba(23, 23, 23, 1)",
         "user_mes_blur_tint_color": "rgba(0, 0, 0, 0.9)",
         "bot_mes_blur_tint_color": "rgba(0, 0, 0, 0.9)",
         "shadow_color": "rgba(0, 0, 0, 1)",
-        "border_color": "rgba(0, 0, 0, 1)",
+        "border_color": "rgba(0, 0, 0, 0.5)",
         "custom_css": "",
         "waifuMode": false,
         "movingUI": false,
         "movingUIState": {},
         "movingUIPreset": "Default",
-        "noShadows": true,
+        "noShadows": false,
         "theme": "Default (Dark) 1.7.1",
         "gestures": true,
         "auto_swipe": false,
@@ -198,12 +198,12 @@
         "allow_name1_display": false,
         "allow_name2_display": false,
         "hotswap_enabled": true,
-        "timer_enabled": false,
+        "timer_enabled": true,
         "timestamps_enabled": true,
-        "timestamp_model_icon": "",
+        "timestamp_model_icon": false,
         "mesIDDisplay_enabled": true,
         "max_context_unlocked": false,
-        "message_token_count_enabled": "",
+        "message_token_count_enabled": false,
         "expand_message_actions": true,
         "enableZenSliders": false,
         "enableLabMode": false,
@@ -218,44 +218,44 @@
         "single_line": false,
         "default_instruct": "",
         "instruct": {
-            "enabled": true,
-            "preset": "DreamGen Role-Play V1",
-            "system_prompt": "You are an intelligent, skilled, versatile writer.\n\nYour task is to write a role-play based on the information below.",
-            "input_sequence": "<|im_end|>\n<|im_start|>text names= {{user}}\n",
-            "output_sequence": "<|im_end|>\n<|im_start|>text names= {{char}}\n",
+            "enabled": false,
+            "preset": "Alpaca-Roleplay",
+            "system_prompt": "Develop the plot slowly, always stay in character. Describe all actions in full, elaborate, explicit, graphic, and vivid detail. Mention all relevant sensory perceptions.",
+            "input_sequence": "\n### Instruction:",
+            "output_sequence": "\n### Response:",
             "first_output_sequence": "",
-            "last_output_sequence": "",
+            "last_output_sequence": "\n### Response (2 paragraphs, engaging, natural, authentic, descriptive, creative):",
             "system_sequence_prefix": "",
             "system_sequence_suffix": "",
             "stop_sequence": "",
             "separator_sequence": "",
-            "wrap": false,
+            "wrap": true,
             "macro": true,
-            "names": false,
-            "names_force_groups": false,
+            "names": true,
+            "names_force_groups": true,
             "activation_regex": "",
             "skip_examples": false
         },
         "default_context": "Default",
         "context": {
-            "preset": "DreamGen Role-Play V1",
-            "story_string": "<|im_start|>system\n{{#if system}}{{system}}\n\n\n{{/if}}## Overall plot description:\n\n{{#if scenario}}{{scenario}}{{else}}Conversation between {{char}} and {{user}}.{{/if}}{{#if wiBefore}}\n\n{{wiBefore}}{{/if}}\n\n\n## Characters:\n\n### {{char}}\n\n{{#if description}}{{description}}\n\n{{/if}}{{#if personality}}{{personality}}\n\n{{/if}}### {{user}}\n\n{{#if persona}}{{persona}}{{else}}{{user}} is the protagonist of the role-play.{{/if}}{{#if wiAfter}}\n\n{{wiAfter}}{{/if}}{{#if mesExamples}}\n\n{{mesExamples}}{{/if}}",
-            "chat_start": "",
-            "example_separator": "",
+            "preset": "NovelAI",
+            "story_string": "{{#if system}}{{system}}{{/if}}\n{{#if wiBefore}}{{wiBefore}}{{/if}}\n{{#if persona}}{{persona}}{{/if}}\n{{#if description}}{{description}}{{/if}}\n{{#if personality}}Personality: {{personality}}{{/if}}\n{{#if scenario}}Scenario: {{scenario}}{{/if}}\n{{#if wiAfter}}{{wiAfter}}{{/if}}",
+            "chat_start": "***",
+            "example_separator": "***",
             "use_stop_strings": false,
             "allow_jailbreak": false
         },
         "personas": {
-            "user-default.png": "Cronos Jisyll"
+            "user-default.png": "Cronos"
         },
         "default_persona": "user-default.png",
         "persona_descriptions": {
             "user-default.png": {
-                "description": "{{{user}} is a person who was reincarnated from earth to another world after he slept.\n{{user}} is a creative person, a genius in many fields and a potential programmer.\n{{user}} is a genius at every skill with limitless growth potential if nurtured well\n{{user}} When reincarnated to another world, there is a Reincarnated Support System (RSS) to support, {{user}} requests RSS to transform into a support system with UI, so that it can be easily easy to control and use and RSS will change its name to Stella.\n{{user}} is very smart, cunning and always finds a reason to gain an advantage in everything, acts regardless, is someone who really sacrifices others if necessary, if he does not consider that person as friends or people who can take advantage of you.",
+                "description": "{{user}}, the main character of the story, epitomizes strength and turmoil, driven by a relentless pursuit of greatness and self-recognition. In the prime of his youth, he presents an aura of confidence and arrogance, masking the profound anguish and desolation stemming from the loss of his mother in the harrowing events of the fourth MysBeast Incursion. {{user}} often finds himself at odds with his father, defying his wishes and principles, as he carves his own path in defiance of the paternal shadow he resents. Fuelled by an intense aspiration to ascend as the most formidable hunter in Mysteria's annals, he relentlessly strives to surpass the haunting specter of his father's legacy, propelled by a fervent desire for self-empowerment and a yearning to transcend the poignant scars of his past.",
                 "position": 0
             }
         },
-        "persona_description": "{{{user}} is a person who was reincarnated from earth to another world after he slept.\n{{user}} is a creative person, a genius in many fields and a potential programmer.\n{{user}} is a genius at every skill with limitless growth potential if nurtured well\n{{user}} When reincarnated to another world, there is a Reincarnated Support System (RSS) to support, {{user}} requests RSS to transform into a support system with UI, so that it can be easily easy to control and use and RSS will change its name to Stella.\n{{user}} is very smart, cunning and always finds a reason to gain an advantage in everything, acts regardless, is someone who really sacrifices others if necessary, if he does not consider that person as friends or people who can take advantage of you.",
+        "persona_description": "{{user}}, the main character of the story, epitomizes strength and turmoil, driven by a relentless pursuit of greatness and self-recognition. In the prime of his youth, he presents an aura of confidence and arrogance, masking the profound anguish and desolation stemming from the loss of his mother in the harrowing events of the fourth MysBeast Incursion. {{user}} often finds himself at odds with his father, defying his wishes and principles, as he carves his own path in defiance of the paternal shadow he resents. Fuelled by an intense aspiration to ascend as the most formidable hunter in Mysteria's annals, he relentlessly strives to surpass the haunting specter of his father's legacy, propelled by a fervent desire for self-empowerment and a yearning to transcend the poignant scars of his past.",
         "persona_description_position": 0,
         "persona_show_notifications": true,
         "persona_sort_order": "asc",
@@ -270,7 +270,7 @@
                 "lastConnection": 1711700036837
             }
         ],
-        "bogus_folders": "",
+        "bogus_folders": false,
         "aux_field": "character_version",
         "restore_user_input": true,
         "reduced_motion": false,
@@ -283,7 +283,7 @@
         "apiUrl": "http://localhost:5100",
         "apiKey": "",
         "autoConnect": false,
-        "notifyUpdates": true,
+        "notifyUpdates": false,
         "disabledExtensions": [],
         "expressionOverrides": [],
         "memory": {
@@ -356,22 +356,8 @@
             "currentProvider": "System",
             "auto_generation": true,
             "ElevenLabs": {},
-            "System": {
-                "voiceMap": {
-                    "[Default Voice]": "disabled",
-                    "Cronos Jisyll": "[Default Voice]",
-                    "Seraphina Edora": "[Default Voice]",
-                    "Professor Gandoth": "[Default Voice]",
-                    "Cronos": "[Default Voice]",
-                    "Cronos Jisyl": "[Default Voice]",
-                    "Seraphina": "[Default Voice]",
-                    "Flux the Cat": "[Default Voice]",
-                    "Coding Sensei": "[Default Voice]",
-                    "Stella": "[Default Voice]"
-                }
-            },
-            "narrate_user": false,
-            "enabled": true
+            "System": {},
+            "narrate_user": false
         },
         "sd": {
             "scale_min": 1,
@@ -459,7 +445,7 @@
             "target_language": "vi",
             "internal_language": "en",
             "provider": "bing",
-            "auto_mode": "none"
+            "auto_mode": "responses"
         },
         "objective": {
             "customPrompts": {
@@ -524,8 +510,7 @@
             "rmsMixRate": 1,
             "protect": 0.33,
             "voicMapText": "",
-            "voiceMap": {},
-            "voiceMapText": "Cronos Jisyll: (10,0.5,1.5,250,500,100,80,generated,300,300),\ndefault: (10,0.5,1.5,250,500,100,80,generated,300,300),\nSeraphina: (10,0.5,1.5,250,500,100,80,generated,300,300),\n"
+            "voiceMap": {}
         },
         "hypebot": {
             "enabled": false,
@@ -556,9 +541,9 @@
             }
         },
         "live2d": {
-            "enabled": true,
+            "enabled": false,
             "followCursor": false,
-            "autoSendInteraction": true,
+            "autoSendInteraction": false,
             "force_animation": false,
             "force_loop": false,
             "showFrames": false,
@@ -571,72 +556,6 @@
             "captionPrompt": "This is a screenshot of \"{{game}}\" game played on {{core}}. Provide a detailed description of what is happening in the game.",
             "commentPrompt": "{{user}} is playing \"{{game}}\" on {{core}}. Write a {{random:cheeky, snarky, funny, clever, witty, teasing, quirky, sly, saucy}} comment from {{char}}'s perspective based on the following:\n\n{{caption}}",
             "forceCaptions": false
-        },
-        "blip": {
-            "enabled": true,
-            "enableUser": true,
-            "onlyQuote": false,
-            "ignoreAsterisk": false,
-            "autoScrollChatToAnimation": false,
-            "showAllCharacters": true,
-            "audioMuted": true,
-            "audioVolume": 1,
-            "minSpeedMultiplier": 1,
-            "maxSpeedMultiplier": 1,
-            "commaDelay": 0,
-            "phraseDelay": 0,
-            "textSpeed": 10,
-            "audioVolumeMultiplier": 100,
-            "audioSpeed": 80,
-            "audioMinPitch": 1,
-            "audioMaxPitch": 1,
-            "audioPlayFull": false,
-            "generatedMinFrequency": 440,
-            "generatedMaxFrequency": 440,
-            "voiceMap": {
-                "Cronos Jisyll": {
-                    "minSpeedMultiplier": 0.5,
-                    "maxSpeedMultiplier": 1.5,
-                    "commaDelay": 250,
-                    "phraseDelay": 500,
-                    "textSpeed": 10,
-                    "audioVolume": 100,
-                    "audioSpeed": 80,
-                    "audioOrigin": "generated",
-                    "audioSettings": {
-                        "minFrequency": 300,
-                        "maxFrequency": 300
-                    }
-                },
-                "default": {
-                    "minSpeedMultiplier": 0.5,
-                    "maxSpeedMultiplier": 1.5,
-                    "commaDelay": 250,
-                    "phraseDelay": 500,
-                    "textSpeed": 10,
-                    "audioVolume": 100,
-                    "audioSpeed": 80,
-                    "audioOrigin": "generated",
-                    "audioSettings": {
-                        "minFrequency": 300,
-                        "maxFrequency": 300
-                    }
-                },
-                "Seraphina": {
-                    "minSpeedMultiplier": 0.5,
-                    "maxSpeedMultiplier": 1.5,
-                    "commaDelay": 250,
-                    "phraseDelay": 500,
-                    "textSpeed": 10,
-                    "audioVolume": 100,
-                    "audioSpeed": 80,
-                    "audioOrigin": "generated",
-                    "audioSettings": {
-                        "minFrequency": 300,
-                        "maxFrequency": 300
-                    }
-                }
-            }
         }
     },
     "tags": [
@@ -647,7 +566,16 @@
         }
     ],
     "tag_map": {
-        "Stella.png": []
+        "default_FluxTheCat.png": [
+            "1345561466591"
+        ],
+        "default_Seraphina.png": [
+            "1345561466591"
+        ],
+        "default_CodingSensei.png": [
+            "1345561466591"
+        ],
+        "Seraphina Edora.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
@@ -974,8 +902,8 @@
         "n": 1
     },
     "background": {
-        "name": "9ef861757062455285fae34047fb2db0.png~tplv-0es2k971ck-image.png",
-        "url": "url(\"backgrounds/9ef861757062455285fae34047fb2db0.png~tplv-0es2k971ck-image.png\")"
+        "name": "__transparent.png",
+        "url": "url(\"backgrounds/__transparent.png\")"
     },
     "proxies": [
         {
