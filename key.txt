@@ -1,1 +1,2 @@
-"api_key_horde": "FCQOf3SEsKjVs_euEc882A"
+"api_key_horde": "FCQOf3SEsKjVs_euEc882A",
+"gemini":"AIzaSyBVa4i2bPlgoWuO8M8k-maBJ9IaOUhNXMI"
