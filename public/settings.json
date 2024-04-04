@@ -2,14 +2,14 @@
     "firstRun": false,
     "currentVersion": "1.11.6",
     "username": "Cronos Jisyll",
-    "active_character": "Stella.png",
+    "active_character": "Stella1.png",
     "active_group": null,
     "api_server": "http://127.0.0.1:5000/api",
     "preset_settings": "RecoveredRuins",
     "user_avatar": "user-default.png",
     "amount_gen": 250,
     "max_context": 2048,
-    "main_api": "koboldhorde",
+    "main_api": "textgenerationwebui",
     "world_info_settings": {
         "world_info": {
             "globalSelect": [
@@ -95,7 +95,7 @@
         ],
         "ignore_eos_token_aphrodite": false,
         "spaces_between_special_tokens_aphrodite": true,
-        "type": "koboldcpp",
+        "type": "dreamgen",
         "mancer_model": "mytholite",
         "togetherai_model": "Gryphe/MythoMax-L2-13b",
         "infermaticai_model": "",
@@ -647,7 +647,7 @@
         }
     ],
     "tag_map": {
-        "Stella.png": []
+        "Stella1.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
